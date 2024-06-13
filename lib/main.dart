@@ -94,7 +94,7 @@ class _MyAppState extends State<MyApp> {
                       },
                       child: const Expanded(
                         child:
-                      Text('Cístico ou Predominantemente cístico'
+                      Text('Cístico ou Pred. cístico'
                       ,style: TextStyle(fontSize: 20),),),
                     ),
                     // make more 3 radiomenubuttons
@@ -129,7 +129,7 @@ class _MyAppState extends State<MyApp> {
                         });
                       },
                       child: const Text(
-                        'Sólido ou Predominantemente sólido',
+                        'Sólido ou Pred. sólido',
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
@@ -323,10 +323,10 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.grey[200],
                 ),
                 padding: const EdgeInsets.all(20),
-                child: const Text(
+                child: const Expanded(child: Text(
                   'Focos ecogênicos (Escolha todos que se aplicarem):',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
+                ),),
               ),
               Container(
                 padding: const EdgeInsets.all(10),
