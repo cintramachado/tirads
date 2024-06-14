@@ -10,6 +10,8 @@ void main() {
 //MyApp is a class that extends StateFULWidget
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -92,10 +94,8 @@ class _MyAppState extends State<MyApp> {
                           _composicao = value!;
                         });
                       },
-                      child: const Expanded(
-                        child:
-                      Text('Cístico ou Pred. cístico'
-                      ,style: TextStyle(fontSize: 20),),),
+                      child: const Text('Cístico ou Pred. cístico'
+                      ,style: TextStyle(fontSize: 20),),
                     ),
                     // make more 3 radiomenubuttons
                     RadioMenuButton(
@@ -323,10 +323,10 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.grey[200],
                 ),
                 padding: const EdgeInsets.all(20),
-                child: const Expanded(child: Text(
+                child: const Text(
                   'Focos ecogênicos (Escolha todos que se aplicarem):',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),),
+                ),
               ),
               Container(
                 padding: const EdgeInsets.all(10),
@@ -419,7 +419,7 @@ class _MyAppState extends State<MyApp> {
               alignment: Alignment.center,
               padding: const EdgeInsets.all(20),
               margin: const EdgeInsets.only(top: 20),
-              child: Text ("${gettirads()}",
+              child: Text (gettirads(),
               style: const TextStyle(fontSize: 20),),
             )],
           ),
